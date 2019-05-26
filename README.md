@@ -1,5 +1,13 @@
-<h1>EZ-Lingo</h1>
-<h3>Language Translator</h3>
-<p>EZ-lingo functions to translate words and long texts into the choosen language <p>
-<p>It supports multiple global languages like russian,german etc</p>
+<h1>four</h1>
+<h3>EZ_Lingo</h3>
+<p>
+A web app to convert word in given languages. It supports multiple global languages like russian,german etc.
+<p>
+<p>AWS link: </p>
+<ol>
+<li>Rishabh Kuril</li>
+<li>Dhananjay Pathak</li>
+<li>Satish Sahu</li>
+<li>Shreya Jain</li>
+</ol>
 
