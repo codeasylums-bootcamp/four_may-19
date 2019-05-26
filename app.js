@@ -1,5 +1,4 @@
 
-
 let textToTranslate;
 //console.log(textToTranslate);
 
@@ -19,6 +18,10 @@ function writeIt() {
         document.getElementById('translatedWord').innerHTML = `${x}`;
          
     });
+}
+function sayIt(){
+    var key = 'fdd5c1a23b1c011e2ac960684788234a';
+
 }
 
 
