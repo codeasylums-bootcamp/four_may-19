@@ -3,7 +3,7 @@
 <p>
 A web app to convert word in given languages. It supports multiple global languages like russian,german etc.
 <p>
-<p>AWS link: </p>
+<p>AWS link: 13.232.114.141</p>
 <ol>
 <li>Rishabh Kuril</li>
 <li>Dhananjay Pathak</li>
