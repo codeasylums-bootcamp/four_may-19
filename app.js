@@ -1,3 +1,5 @@
 function writeIt(){
-    document.getElementById('sourceLang').value;
+
+    var textToTranslate = document.getElementById('sourceLang').value;
+    alert(textToTranslate);
 }
