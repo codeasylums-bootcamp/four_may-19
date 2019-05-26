@@ -3,18 +3,21 @@
 let textToTranslate;
 //console.log(textToTranslate);
 
-function writeIt(){
+function writeIt() {
     textToTranslate = document.getElementById("sourceLang").value;
-    console.log("from input: ");
+    console.log("Input: ");
     console.log(textToTranslate);
     var oReq = new XMLHttpRequest;
-
-
-    oReq.open("POST", 'https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20190526T063700Z.f829db6669afabd2.99c804c5fa4006930bd8c6b0ebc17d5c768ab1e8&lang=ru&text='+textToTranslate, true)
+    LangToBeCon = document.querySelector('#fromLang').value;
+    ConvertToLang = document.querySelector('#toLang').value;
+    oReq.open("POST",'https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20190526T063700Z.f829db6669afabd2.99c804c5fa4006930bd8c6b0ebc17d5c768ab1e8&lang='+ConvertToLang+'&hint='+LangToBeCon+'&text='+textToTranslate, true)
     oReq.send();
     oReq.addEventListener('load', function (event) {
         var json = JSON.parse(this.responseText);
-        console.log(json);
+        var x = json.text[0];
+        console.log(x);
+        document.getElementById('translatedWord').innerHTML = `${x}`;
+         
     });
 }
 
@@ -28,7 +31,7 @@ function writeIt(){
 
 // var el = document.getElementById('writeBtn');
 // el.addEventListener('click', function (event) {
-    
+
 //     console.log(this.responseText);
 // });
 
